@@ -1,0 +1,44 @@
+.short_nb{
+  width: 90px;
+}
+.lesson_name{
+  width: 300px;
+}
+
+.ls_set{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+
+}
+.ls_set_box{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 10px;
+  background-color: #32c8a3;
+  box-shadow:0px 0px 3px #ccc;
+
+  /* border: 1px solid red; */
+}
+.ls_set_box:hover{
+  background-color: #47d4ac;
+}
+.info_wrap .ls_set a{
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px 150px;
+}
+.ls_set_box i{
+  margin-left: 10px;
+}
+
+  /*宗甫專用*/
+.lesson_name_1{
+  width: 100px;
+}

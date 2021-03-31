@@ -1,0 +1,117 @@
+/* 註冊成功畫面的css */
+body{
+    background-color: #21d4a7;
+}
+.message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+    /* margin-bottom: 20px; */
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+
+}
+.b_tutle h4{
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 0 3px #21d4a7;
+    padding-bottom:5px;
+}
+
+.block{
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.block h5{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.block p,.block span{
+    font-size: 16px;
+    /* line-height: rem; */
+}
+
+.sa{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* .setting_area{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    font-size: 14px;
+    box-shadow:0px 0px 2px #ccc;
+
+} */
+
+
+/* 重置密碼 */
+.re{
+    width: 400px;
+    /* border: 1px solid red; */
+}
+.block input{
+    width: 360px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0px 0px 3px #ccc;
+}
+.block input::placeholder{
+    text-align: center;
+    color: #29dfb1;
+}
+.block label{
+    /* margin-top: 20px; */
+    font-size: 18px;
+}
+.re_p{
+    line-height: 1.5rem;
+}
+/* 按鈕 */
+.check_btn{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.check_btn button:hover{
+    background-color: #29dfb1;
+}
+.check_btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+}
+.check_btn .cancel:hover{
+    margin-right: 20px;
+    background-color: rgb(214, 210, 210);
+}
+.check_btn .save{
+    background-color: #21d4a7;
+}

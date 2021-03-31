@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  list-style: none;
+  box-sizing: border-box;
+  line-height: 0.8;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    #student_infobox {
+    animation: fadein 0.8s;
+    }
+    #picture img{
+    animation: fadein 3s;
+    }
+
+.form,
+.ask_area,
+h2,
+label {
+  font-weight: 300;
+}
+#overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 4;
+}
+.popup_box {
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+  width: 820px;
+  height: 430px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -410px;
+  padding: 20px 20px 0px 20px;
+  background-color: #fff;
+  z-index: 5;
+  overflow: hidden;
+}
+
+/*整塊*/
+.st_info_wrap{
+    /* border: 1px solid red; */
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*個人照片*/
+.st_picture{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: 20px 0px 10px 20px;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    background-color: #fff;
+}
+.st_picture img{
+    width: 100%;
+    object-fit:cover
+}
+
+/* 資訊 */
+.st_info_wrap .profile{
+    margin-left: 50px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+
+/* .profile .wrap_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+.pf{
+    display: flex;
+    margin-top: 10px;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+    /* border: 1px solid red; */
+
+}
+.pf .wrap{
+    width: 280px;
+    padding-left: 15px;
+    border-left: 2px solid #eee;
+}
+.pf .wp_div{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.pf .wp_div label{
+    width: 85px;
+    color: #666;
+}
+.profile .wp_div p{
+    margin-right: 10px;
+}
+.pf .wp_div span{
+    color: #494949;
+}
+.pf .wp_div:nth-child(1),.profile .wp_div{
+    display: flex;
+    align-items:baseline;
+    /* border: 1px solid red; */
+}
+.profile .wp_div h2{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/* 學員自介 */
+.self_intro{
+    font-size: 18px;
+    padding: 0px 25px;
+    /* border: 1px solid red; */
+}
+.self_intro p{
+    margin: 15px 0;
+    font-weight: 400;
+    color: #666;
+}
+
+.self_intro p{
+    /* letter-spacing:0.8px; */
+    line-height: 1.6rem;
+    font-weight: 300;
+}
+
+/* 隱藏 */
+.hide {
+  display: none;
+}
+
+/* 按掉的叉叉 */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #21d4a7;
+}
+

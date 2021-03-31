@@ -1,0 +1,266 @@
+
+.container{
+    /* margin: auto; */
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #f9f9f9; */
+}
+
+
+/*左欄*/
+.aside{
+    width: 30%;
+    min-width: 200px;
+    /* border: 1px solid  red; */
+    margin-right: 20px;
+}
+.aside ul{
+    margin: 40px;
+    border-right: 1px solid #ccc;
+    
+}
+.aside ul li{
+    padding: 0px 50px 25px 40px;
+    text-align: right;
+    /* background-color: #eee; */
+}
+.aside ul li a{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.aside ul li i{
+    margin-right: 10px;
+}
+
+.aside ul li a:hover{
+    color: #21d4a7;
+}
+
+/*右欄*/
+.content{
+    position: relative;
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 70%;
+    /* margin-left: 50px; */
+    /* background-color: #eee; */
+    
+}
+
+h3{
+    font-size: large;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+
+}
+
+/*上方欄*/
+.st_profile{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    margin: 20px 20px 0;
+}
+/*個人照片*/
+.picture{
+    width: 220px;
+    height: 220px;
+    display: flex;
+    margin: 20px;
+    border-radius: 50%;
+    overflow:hidden;
+    background-color: #fff;
+}
+.picture img{
+    width: 100%;
+    object-fit:cover
+}
+.p_info{
+    width: 600px;
+    margin: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+/* 暫時 */
+.p_info div{
+    padding: 5px;
+}
+
+.fullname_alias_sex_edit{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fullname_alias_sex_edit div{
+    display: flex;
+    align-items: center;
+}
+.fullname_alias_sex_edit h2{
+    display: block;
+    margin-right: 10px;
+}
+.fullname_alias_sex_edit a{
+   float: right;
+}
+.fullname_alias_sex_edit i{
+    font-size: 30px;    
+}
+.activity{
+    /* border: 1px solid red; */
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+.p_data{
+    margin-top: 10px;
+    margin-left: -40px;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+}
+.p_data_box{
+    width: 300px;
+    /* border: 1px solid red; */
+}
+.pdb_number{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #21d4a7;
+}
+.pdb_text{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/*warning*/
+.warning{
+    width: 850px;
+    /* border: 1px solid red; */
+    margin: 0px 40px;
+    padding: 15px 15px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+    background-color: #777;
+    color: #fff;
+    display: flex;
+
+}
+
+
+/*BMR & TDEE*/
+.p_bodydata{
+    width: 890px;
+    float: left;
+    margin: auto;
+    margin: 0 20px;
+    /* max-width: 800px; */
+    /* position: relative; */
+    /* border: 1px solid red; */
+    display: flex;
+}
+.p_bodydata_box{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 20px;
+    padding: 10px 40px 20px;
+    font-family: 'Noto Sans TC', Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:0px 0px 3px #ccc;
+}
+.bd_title{
+    font-size: 45px;    
+    font-weight: 600;
+    color: #666;
+}
+.bd_num{
+    font-size: 60px;
+    font-weight: 600;
+    color:coral;
+    padding: 0 0 20px 0;   
+}
+.bd_text{
+    /* text-align:justify; */
+    text-align:left;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* 編輯 */
+.explain{
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+.edit_area{
+    width: 410px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    font-size: 14px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    box-shadow:0px 0px 2px #ccc;
+
+}
+.edit_box{
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+.edit_box input, .select_activity{
+    width: 350px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0px 0px 3px #ccc;
+}
+.e_button{
+    width: 370px;
+    text-align: right;
+}
+
+.e_button button:hover{
+    background-color: #29dfb1;
+}
+.e_button button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+
+}
+.e_button .cancel{
+    margin-right: 20px;
+    background-color: #ccc;
+}
+.e_button .cancel:hover{
+    margin-right: 20px;
+    background-color: rgb(214, 210, 210);
+}
+.e_button .save{
+    background-color: #21d4a7;
+}

@@ -1,0 +1,61 @@
+.lesson {
+	min-height: 500px;
+}
+
+.li_color {
+	color: #333;
+}
+
+a.active.nav-link {
+	color: #4d4d4d !important;
+	font-weight: 500;
+	border-bottom: 3px solid !important;
+}
+
+.nav-tab {
+	border-bottom: 1px solid #ccc !important;
+}
+
+.nav-tab li a {
+	padding-bottom: 1rem;
+}
+/* .nav-tab li a:hover{
+  color: #21d4a7;
+} */
+.nav-pills li a {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.tr_height tr td {
+	font-size: 16px;
+	padding: 20px;
+}
+
+.thead tr th {
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	background-color: #32c8a3;
+}
+
+.thead-light tr th {
+	padding: 20px;
+	text-align: center;
+}
+
+.thead tr th {
+	border: 1px solid #32c8a3;
+}
+
+.tr_height td {
+	vertical-align: middle;
+	text-align: center;
+	height: 80px;
+	line-height: 1.6;
+}
+
+.tr_height td i {
+	font-size: 26px;
+	color: #005FFF;
+}

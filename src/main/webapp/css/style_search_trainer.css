@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 1.3;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+}
+.search_area{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fff;
+    padding: 15px;
+}
+.search_area h3{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.search_trainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+  .search_trainer li,label {
+    display: inline-block;
+  }
+  .search_trainer li{
+    margin-right: 20px;
+  }
+  .search_trainer select {
+    width: 100px;
+  }
+  .search_trainer select,
+  .search_input,
+  .search_btn {
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "Noto Sans TC", sans-serif;
+    text-align: center;
+    vertical-align: baseline;
+  }
+  .search_trainer .search_input {
+    width: 300px;
+    text-align:left;
+  }
+  .search_trainer .search_btn {
+    background-color: #59ddb8;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .search_trainer .search_btn:hover {
+    background-color: #44d4ab;
+  }
+
+  .sequence{
+      margin-top: 10px;
+  }
+  .sequence label,.sequence a{
+    margin-right: 15px;
+  }
+.sequence a{
+    text-decoration: none;
+}
+
+  /* 搜尋結果box */
+
+  .result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+/*     border-bottom: 1px solid #ddd; */
+/*     width: 850px; */
+/*     padding: 20px; */
+/*     position: relative; */
+/*     display: flex; */
+/*     justify-content: center; */
+    /* border-top: 1px solid red; */
+  } 
+
+  
+  .result .fb{
+    border-bottom: 1px solid #ddd;
+    width: 850px;
+    padding: 50px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }  
+    .result .fb:last-child{
+    border-bottom: 1px solid #fff;
+    width: 850px;
+    padding: 50px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }  
+
+    .result .mpb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+
+
+/* 教練頭貼 */
+.result .mb_picture{
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    overflow:hidden;
+    border-radius: 50%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.result .mb_picture img{
+    width: 100%;
+    object-fit:cover
+}
+/* 教練資訊 */
+.result .fb_content{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+}
+
+.result .fc_title{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.result .fc_title i{
+    font-size: 20px;
+}
+.result .fc_title .trTitle{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+/* .result .ls_info label{ */
+/*     display: inline-block; */
+/*     width: 200px; */
+/*     color: #999; */
+/* } */
+.result .ls_info label span{
+    color: #05c18b;
+}
+
+.result .fc_star{
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
+.result .fc_content{
+/* 	border: 1px solid red; */
+	margin-top: 10px;
+	width: 600px;
+}
+
+/* 評價星星 */
+.starss {
+    position: relative;
+    vertical-align:text-top;
+    display: inline-block;
+    color: #ddd; /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 20px; /*調整字體大小可放大縮小星星*/
+    /* text-shadow: 0px 1px 0 #999; */
+}
+.full_star {
+    width: 90%; /*調整寬度可變更星等*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ffd000; /*前景星星顏色*/
+}
+.norate{
+	font-size: 14px; 
+	color: #999;
+}
+/* 新增收藏功能 */
+.like{
+  color: #ddd;
+}
+.change_color{
+  color: red;
+}
+
+
+/* 回到最上面按鈕 */
+#gotop {
+	position: fixed;
+	z-index: 90;
+	right: 30px;
+	bottom: 31px;
+	display: none;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	background: #65e7c7;
+	line-height: 50px;
+	border-radius: 50%;
+	transition: all 0.5s;
+	text-align: center;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+		rgba(0, 0, 0, 0.12);
+}
+
+#gotop:hover {
+	background: #7af8d8;
+}

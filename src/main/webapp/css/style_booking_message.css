@@ -1,0 +1,93 @@
+.booking_lesson{
+    border: 1px solid #eee;
+    position: relative;
+    top: 125px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fff;
+    box-shadow:  1px 1px 1px #ddd;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.booking_lesson .explain{
+    font-size: 14px;
+}
+.b_tutle h4{
+    /* width: 150px; */
+    font-weight: 500;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    box-shadow: 0 3px #21d4a7;
+    padding-bottom:5px;
+    margin: 10px 0 30px 0;
+}
+.booking_title{
+    position: relative;
+    top: 125px;
+    margin: auto;
+    width: 100%;
+    max-width: 1100px;
+    background: transparent;
+    border: none;
+    box-shadow:none;
+    margin-bottom: 0px;
+}
+.booking_title .title h3{
+    display: inline-block;
+    /* width: 100%; */
+    text-align: left;    
+    font-size: 16px;      
+}
+.setting_area{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.setting_box{
+    border: none;
+    font-size: 16px;
+    padding: 0px;
+    height: 80px;
+    line-height: 80px;
+}
+.setting_box label{
+    width: 150px;
+    color: #666;
+    display: inline-flex;
+}
+.setting_box select {
+    width: 350px;
+}
+.check_btn{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.check_btn button:hover{
+    background-color: #29dfb1;
+}
+.check_btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+}
+.check_btn .cancel{
+    margin-right: 20px;
+    background-color: #ccc;
+}
+.check_btn .cancel:hover{
+    margin-right: 20px;
+    background-color: rgb(214, 210, 210);
+}
+.check_btn .save{
+    background-color: #21d4a7;
+}

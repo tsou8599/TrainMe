@@ -1,0 +1,124 @@
+       /*教練推薦*/
+
+       .hot_trainer{
+        text-align: center; 
+        display:block;
+        margin: 20px 0px -10px;
+    }
+    .hot_trainer h3{
+        font-size: 18px;
+        text-align: center;
+        color: #666;
+		box-shadow: 0 3px #21d4a7;
+		padding-bottom:5px;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .splide{
+        margin: auto;
+        
+    }
+    .splide__slide{
+        position: relative;
+        width: 250px;
+        height: 280px;
+        /* background-color: black; */
+        /* background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); */
+        box-shadow: 0px 0px 5px 0.6px #999;
+        
+    }
+    .splide__slide .tr_img{
+        /* position: absolute; */
+        width: 202px;
+        height: 202px;
+        display: flex;
+        overflow:hidden;
+    }
+    .splide__slide a img{
+        width: 100%;
+        object-fit:cover
+    }
+
+    .splide__slide .p_t{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        background-color: #000;
+        padding: 7px 0px 10px;
+        color: aliceblue;     
+        font-family: 'Noto Sans TC', sans-serif;       
+    }
+    .t_name{
+        font-size: 18px;
+        font-weight: 700;
+
+        text-align: center;
+        margin: 8px;
+    }
+    
+	.p_t span{
+        display: flex;
+        justify-content: space-around;
+        /* padding: 5px; */
+        font-size: 13px;
+        margin: 0px 10px;
+    }
+    .p_t .rt_v{
+        display: inline-block;
+        /* padding: 5px; */
+        font-size: 13px;
+        margin: 0px;
+    }
+    .rt_v span{
+		padding-left: 10px;
+		display: inline-block;
+    }
+    .p_t span i{
+        margin: 0px 10px 0px 0px ;
+    }
+    .rating{
+     	 display: flex;
+        justify-content: space-around;
+    }
+    /* <p class="t_name">教練名稱</p>
+                <p class="t_location">地點</p>
+                <p class="t_ltimes">20次課程媒合</p> */
+
+    /*評價星星*/
+
+    .ratings {
+        position: relative;
+        bottom: 20%;
+        left: 4%;
+        vertical-align: middle;
+        display: inline-block;
+        color: #b1b1b1;
+        overflow: hidden;
+        font-size: 14pt;
+    }
+    .full-stars {
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #fde16d;
+    }
+    .empty-stars:before, .full-stars:before {
+        content:"\2605\2605\2605\2605\2605";
+        font-size: 14pt;
+    }
+    .empty-stars:before {
+        -webkit-text-stroke: 1px #848484;
+    }
+    .full-stars:before {
+        -webkit-text-stroke: 1px orange;
+    }
+    /* Webkit-text-stroke is not supported on firefox or IE */
+
+    /* Firefox */
+    @-moz-document url-prefix() {
+        .full-stars {
+            color: #ECBE24;
+        }
+    }

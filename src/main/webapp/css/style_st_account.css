@@ -1,0 +1,117 @@
+.setting_area{
+    width: 800px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    font-size: 14px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    box-shadow:0px 0px 3px #ccc;
+
+}
+.setting_box{
+    /* border: 1px solid red; */
+    padding: 25px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.setting_box label{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 100px;
+    color: #444;
+
+}
+.setting_box p{
+    /* border: 1px solid red; */
+    display: inline-block;
+    font-size: 16px;
+}
+.setting_box a{
+    color: #21d4a7;
+}
+.setting_box input{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 6px 0px;
+    width: 200px;
+}
+.setting_box select{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 0px;
+    width: 100px;
+    margin-right: 10px;
+}
+.address input{
+    width: 280px;
+}
+.upload_file_area{
+    display: flex;
+}
+.upload_file_area>div:nth-child(2){
+    margin-left: 20px;
+}
+.upload_file_area p{
+    font-weight: 300;
+    color: #333;
+    font-size: 14px;
+}
+.ufl_box{
+    margin: auto;
+}
+/* 上傳頭像 */
+.upload_imgbox{
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/upimage.png');
+    background-size: cover;
+    border: 1px solid #ccc;
+    display: block;
+    overflow: hidden;
+}
+#photo{
+	 width: 150px;
+     height: 150px;
+}
+.upload_videobox{
+	width: 450px;
+    height: 300px;
+}
+.upload_file{
+    display: flex;
+}
+.upload_button{
+    display: flex;
+    align-items: center;    
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    width: 80px;
+    height: 45px;
+    margin: 30px 2px 0px;
+    background-color: #21d4a7;
+    font: 13px  Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.upload_button:hover{
+    background-color: #29dfb1;
+}
+.upload_button label{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: #fff;
+    width: 80px;
+    height: 45px;
+    cursor: pointer;
+}
+.theFile{
+    display: none;
+}
+
+/* 更新按紐 */
+.setting_area .e_button{
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+}

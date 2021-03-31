@@ -1,0 +1,55 @@
+.trif_f {
+	width: 500px;
+}
+
+.thead-light tr th {
+	padding: 10px;
+	text-align: center;
+}
+
+.tr_license td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.n_btn {
+	font-size: 15px;
+	margin-left: 5px;
+}
+
+.setting_box label {
+	width: 120px;
+}
+
+.setting_box .label_set {
+	font-size: 14px;
+	font-weight: 500;
+	/* margin-right: 0px; */
+}
+
+.setting_box .short_nb {
+	width: 100px;
+}
+
+.setting_box .trpage_title {
+	width: 500px;
+}
+
+.ls label:nth-child(2) {
+	font-weight: 500;
+}
+
+.ex_a {
+	display: flex;
+}
+
+.ex_a a {
+	margin-left: 20px;
+}
+
+.ex_a i {
+	margin-right: 5px;
+}
+.upload_button label{
+	margin-top:5px;
+}

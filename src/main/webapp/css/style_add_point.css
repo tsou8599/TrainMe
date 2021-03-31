@@ -1,0 +1,128 @@
+.message{
+	width: 100%;
+    position: relative;
+    top: 100px;
+    margin: auto;
+	margin-bottom:150px;
+    padding-bottom:100px;
+    /* background-color: #21d4a7; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+
+}
+.b_tutle{
+    text-align: center;
+    margin-bottom:30px;
+    /* background-color: #fff; */
+}
+.b_tutle h4{
+    /* color: #fff; */
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+/*     box-shadow: 0 3px #21d4a7; */
+/*     padding-bottom:8px; */
+    margin-bottom: 20px;
+}
+.b_tutle p{
+	font-size: 16px;
+    color: #333;
+    position: relative;
+}
+.b_tutle p:after{
+  content: "";
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  left:0;
+  right:0;
+  background: #21d4a7;
+  opacity:0.4;
+  width: 100%;
+  height: 5px;
+}
+
+.block{
+	position: relative;
+    text-align: center;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block p,.block span{
+    font-size: 16px;
+    /* line-height: rem; */
+}
+
+.sa{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.choose_point{
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    /* padding: 30px 50px; */
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, #ffffff, #e4e4e4);
+    border: 2px solid #eee;
+    box-shadow:  3px 3px 2px #aaa;
+    margin: 10px;
+}
+.choose_point h5:first-child{
+    margin: 10px;
+}
+.choose_point h5{
+    
+    font-size: 1.2rem;
+    margin: 10px 10px 10px 0px;
+}
+.choose_point p{
+    color: #333;
+    font-size: 18px;
+}
+.choose_point button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #21d4a7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.choose_point button:hover{
+    background-color: #37e9bc;
+}
+.cp_box .circle{
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.cp_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}

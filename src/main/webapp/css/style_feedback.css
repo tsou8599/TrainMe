@@ -1,0 +1,43 @@
+.feedback_ar{
+    display: flex;
+    flex-direction: column;
+}
+.feedback_title .wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.feedback_title .wrap .edit_box{
+    width: 400px;
+    /* border: 1px solid red; */
+    line-height: 1.3;
+}
+.feedback_title .wrap:last-child .edit_box:last-child{
+    display: flex;
+}
+.starss{
+    margin-left: 5px;
+}
+
+.explain{
+    background-color: #eee;
+    padding: 10px;
+    color: #666;
+}
+
+.feedback_content textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0px 0px 3px #ccc;
+}
+.e_button span{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+
+}
+/*在timeset.css也有,之後整合*/
+.back{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }

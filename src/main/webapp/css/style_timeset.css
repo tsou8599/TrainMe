@@ -1,0 +1,84 @@
+      .back{
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .short_nb{
+        width: 90px;
+      }
+      .lesson_name{
+        width: 300px;
+      }
+
+      
+      .tschedule{
+        border: 1px solid #ddd;
+        background-color: #fff;
+        font-size: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .tschedule .thead, tbody tr td{
+        border: 1px solid #ddd
+      }
+      .sc{
+        width: 800px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .tschedule .thead tr th{
+        background-color: #999;
+        border: none;
+        border-bottom:2px solid #ddd;
+        font-family: Tahoma, sans-serif;
+        width: 10%;
+        color: #fff;
+      }
+      .tschedule .thead tr th:first-child{
+        width: 20%;
+      }
+      .tschedule tbody tr th{
+        font-family: Tahoma, sans-serif;
+        font-weight: 300;
+      }
+
+
+    /* 設定起始日 */
+    .datebox {
+        display: flex;
+        justify-content:space-between;
+        align-items:baseline;
+        vertical-align: middle;
+        font-size: 14px;
+        margin: 10px 0px;
+    }
+    .datebox input{
+        margin-top: -5px;
+        /* border: 1px solid red; */
+        width: 200px;
+        border-radius: 3px;
+        border: none;
+        box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+        font-size: 13px;
+        padding: 5px;
+    }
+    .datebox span{
+        margin-left: 10px;
+        /* color: #666; */
+    }
+
+    .add_lesson{
+      /* border: 1px solid red; */
+      padding-top: 15px;
+    }
+
+    /* 課程設定表格高度 */
+    .tr_lesson tr td{
+      height: 20px;
+    }
+
+    /* 置中按鈕 */
+    .trls_t_btn{
+      margin: 25px;
+      display: flex;
+      justify-content: center;
+    }

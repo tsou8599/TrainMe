@@ -1,0 +1,216 @@
+        /*nav*/
+
+        /* #navbar {
+            overflow: hidden;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        } */
+
+        body{
+            /* background-color: #fff; */
+            background-color: #fafafa;
+        }
+        header{
+            position: fixed; /* Make it stick/fixed */
+            top: 0; /* Stay on top */
+            width: 100%; /*Full width */
+            transition: top 0.3s; /* Transition effect when sliding down (and up) */
+            /* background-color: transparent; */
+            background-color: #fff;
+            box-shadow:0px 0px 7px #ccc;
+            /* border: 1px solid  red; */
+            padding: 20px 200px;
+            z-index: 3;
+        }
+        header ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* max-width: 1200px; */
+            margin: auto;
+        }
+        .items{
+            display: inline-flex;
+            padding: 0 25px;
+        }
+        .items li{
+            font-size: 14px;
+            margin: 0 20px;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .items li a{
+            color: #333;
+            transition: .3s;
+        }
+/*         .items li a:hover{ */
+/*             color: #59ddb8; */
+/*             box-shadow: 0 2px #21d4a7; */
+/*             padding-bottom:8px; */
+/*             text-decoration: none; */
+/*         } */
+        /* 通知鈴鐺 */
+        ul li:last-child a .far{
+            position: relative;
+            font-size: 22px;
+            color: #333;
+            margin-left: 20px;
+        }
+        /* 訊息數量紅點 */
+        .jiaobiao{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            border-radius: 30px;
+            background: #ff4848;
+            line-height: 15px;
+            text-align: center;
+            top: -5px;
+            left: 12px;
+            font-size: 0.5rem;
+            color: #fff;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        
+/*         hover動畫 */
+        .items li .nav-underline {
+            position: relative;
+            text-decoration: none;
+            /* color: #fff; */
+            display: block;
+        }
+
+		.nav-underline-active,
+		.nav-underline-active:hover {
+            border-bottom: 2px solid #59ddb8;
+            text-align: center;
+        }
+
+        .items li  .nav-underline:before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            width: 0;
+            border-bottom: 2px solid #59ddb8;
+          }
+         .items li .nav-underline:hover:before {
+            width: 100%;
+          }
+
+         .items li .nav-underline:before {
+            -webkit-transition: width 0.7s ease-in-out;
+            -moz-transition: width 0.7s ease-in-out;
+            -ms-transition: width 0.7s ease-in-out;
+            -o-transition: width 0.7s ease-in-out;
+            transition: width 0.7s ease-in-out;
+        }
+
+        /*logo*/
+
+        .logo{
+            width: 50%;
+            flex: 1;
+        }
+        .logo img{
+            vertical-align: bottom;
+            width: 200px;
+        }
+        .nav_btn{
+            display: flex;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 13px;
+            background-color: #59ddb8;
+            cursor: pointer;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .nav_btn:hover{
+            padding: 13px 19px;
+            color: rgb(5, 230, 192);
+            background-color:#fff;
+            border: 1px solid #59ddb8;
+        }
+
+        /*個人頁面下拉選單*/
+
+        /* 會員頭像 */
+        .member{
+            position: relative;
+        }
+        .member>a{
+            /* display: block; */
+            border-radius: 50%;
+            overflow:hidden;
+            width: 35px;
+            height: 35px;
+            display: flex;
+        }
+        .member img{
+            width: 100%;
+            object-fit:cover
+        }
+
+        /*下拉選單*/
+        .dropdown_box{
+            position: relative;
+            border: 1px solid #eee;
+            background-color: #fff;
+            box-shadow:0px 0px 3px #eee;
+            padding: 10px;
+            margin: 10px 0px;
+            width: 100%;
+            height: 100%;
+        }
+        hr{
+            margin: 10px auto;
+            background-color:#eee; 
+            height:1px; 
+            border:none;
+        }
+        .dropdown{
+            /* border: 1px solid red; */
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s ease;
+            margin-top: 0rem;
+            right: -10px;
+            display: none;
+            min-width: 5rem; width: 150px;
+        }
+        .triangle{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #ccc transparent;
+            position: absolute;
+            right: 20px;
+        }
+        ul .member:hover > .dropdown,
+        .dropdown:hover{
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+        .dropdown li a{
+            font-family: 'Noto Sans TC', sans-serif;;
+            /* text-align: center; */
+            width: 100%;
+            padding: 0 0 0 10px;
+            color: #000;
+            font-size: 13px; 
+            font-weight: 300;
+            line-height: 2;
+            cursor: pointer;
+        }
+        .dropdown li a:hover{
+            color: #999;
+        }

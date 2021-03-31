@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 0.8;
+
+    }
+
+.form,.ask_area,h2,label{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+#overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 998;
+}
+.popup_box{
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    background-color: #fff;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/* �n�J�� */
+
+.loginform{
+    position: absolute;
+    display: flex; 
+    height: 500px;
+    transition: .3s;
+}
+
+.ask_signup{
+    width: 300px;
+    height: 100%;
+    /* background-color: #28dab3; */
+    background-image: linear-gradient(60deg, #21d4a7, #0ac2a9);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ask_area{
+    margin: 0px;
+}       
+.ask_area p{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px 0 10px 0;
+}
+.imgbox{
+    margin: auto;
+    width: 80px;
+}
+.ask_area img{
+    width: 100%;
+}
+
+/* ���U�� */
+
+.wrap{
+    /* border: 1px solid #f00; */
+    width: 80%;
+    display: flex; 
+    margin: 10px 110px;
+}
+.st .wrap{
+    /* border: 1px solid #f00; */
+    margin-top: 30px;
+}
+
+.box{
+    width: 50%;
+}
+
+
+/* �ǭ��϶� */
+.st{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 800px;
+    transition: .3s;
+}
+
+/* �нm�϶� */
+.tr{
+    position: absolute;
+    width: 100%;
+    height: 560px;
+    left: -800px;
+    transition: .3s;
+}
+
+.radio{
+    font-size: 13px;
+    margin: 0px  30px 0px 0px;
+}
+.radio label{
+    margin-bottom: 8px;
+}
+.radio .sex span{
+	display: inline-flex;
+    justify-content: space-between;
+}
+.radio .sex span:last-child{
+    margin: 0px 0px 0px 10px;
+}
+.signupform .btn_login{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ask_login{
+    text-align: center;
+    font-size: 13px;
+}
+.ask_login span{
+    color: #999;
+    font-weight: 700;
+    cursor: pointer;
+}
+.ask_login span:hover{
+    color: #21d4a7;
+}
+
+.login_area{
+    display: block;
+    width: 320px;
+    margin: 20px 90px;
+ 
+}
+.login_logo,h2,.group,.check,.btn_login{
+    margin: 8px auto;
+}
+.login_logo{
+    margin: 20px auto;
+    width: 200px;
+}
+.login_logo img{
+    width: 100%;
+}
+.popup_box h2{
+    display: block;
+    width: 72px;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px auto ;
+    box-shadow: 0 3px #21d4a7;
+    padding-bottom:5px;
+    font-size: 16px;
+}
+.st h2, .tr h2{
+    margin-top: 20px;
+
+}
+
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: -3px;
+}
+.group{
+    line-height: 0.5;
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid red; */
+
+}
+.signupform .group{
+    margin: 0px 0px 0px 0px;
+}
+.input_field{
+    /* border: 1px solid red; */
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    padding: 8px;
+}
+.signupform .input_field{
+    width: 250px;
+}
+.check_area{
+    /* border: 1px solid red; */
+    width: 310px;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.check_area a{
+    color: #21d4a7;
+}
+.check{
+    /* border: 1px solid red; */
+    margin-left: 8px;
+}
+.check_box{
+    vertical-align: sub;
+}
+.birthday{
+    line-height: normal;
+}
+.btn_group{
+    display: flex;
+}
+.btn_login{
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    background-image: linear-gradient(120deg, #21d4a7, #5dffd1);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+    cursor: pointer;
+}
+.btn_login:hover{
+    color: #0ac2a9;
+    background: #fff;
+    border: 1px solid #21d4a7;            
+}
+.ask_btn{            
+    color: #0ac2a9;
+    background: #fff;
+    width: 80%;
+    transition: .3s;
+}
+.ask_btn:hover{
+    border:1px solid #fff;            
+    color: #fff;
+    background-image: linear-gradient(120deg, #21d4a7, #5dffd1);
+    width: 80%;
+    transform: .5;
+}
+/* ���� */
+.hide {
+    display: none;
+  }
+
+.transition{
+    transition: .5s;
+}
+/* �ˬd�T�� */
+.msgbox{
+    /* border: 1px solid red; */
+    color: red;
+    font-size: 8px;
+    height: 15px;
+    margin-top: -4px;
+    margin-bottom: 3px;
+    padding: 0px 0px 12px 10px;
+    height: 8px;
+}
+.box:last-child .msgbox:last-child{
+    margin-top: -2px;
+}
+
+.tr .box:last-child .group:nth-child(1) .input_field{
+    padding: 7px;
+}
+
+.st .box:last-child .group:nth-child(5) .input_field, .tr .box:last-child .group:nth-child(7) .input_field{
+    padding: 6px;
+}

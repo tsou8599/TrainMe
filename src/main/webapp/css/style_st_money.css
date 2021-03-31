@@ -1,0 +1,65 @@
+.info_wrap .balance {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 30px;
+}
+.explain {
+  padding: 10px;
+  background-color: #777;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.balance p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+.balance p,
+.balance button {
+  display: inline-block;
+  margin-right: 20px;
+}
+.balance span {
+  color: #29dfb1;
+}
+.df_btn {
+  border: 1px solid #32c8a3;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Noto Sans TC", Tahoma, Helvetica, sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  /* background-color: #21d4a7; */
+  background-color: #fff;
+  color: #32c8a3;
+  transition: 0.5s;
+}
+.df_btn:hover {
+  background-color: #32c8a3;
+  color: #fff;
+}
+.tr_height td {
+  height: 10px;
+}
+
+.thead tr th {
+  text-align: center;
+  color: #fff;
+  padding: 7px;
+  font-weight: 500;
+  background-color: #aaa;
+}
+.thead-light tr th {
+  text-align: center;
+}
+.thead tr th {
+  border: 1px solid #aaa;
+}
+.table tr {
+  border: 1px solid #aaa;
+}

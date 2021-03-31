@@ -1,0 +1,355 @@
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+
+/*左欄*/
+.aside{
+    position: relative;
+    left: 20px;
+    width: 20%;
+    min-width: 200px;
+
+    /* border: 1px solid  red; */
+}
+.aside ul{
+    /* margin: 20px; */
+    background-color: #fff;
+    width: 220px;
+    box-shadow:  1px 1px 1px #ddd;}
+.aside ul li{
+    padding: 25px 30px 25px 30px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.aside ul li:hover{
+    background-color: #21d4a7 ;
+    transition: 0.8s;
+
+}
+.aside ul li:hover,.aside ul li:hover a{
+    color: #fff;
+}
+.aside ul li:nth-child(1){
+    border-top: 10px solid #21d4a7;
+}
+.aside ul li a{
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.aside ul li i{
+    margin-right: 10px;
+}
+
+.aside ul li a:hover{
+    color: #fff;
+}
+
+/* title */
+.mypage_title{
+    font-size: 18px;
+}
+
+
+/*右欄*/
+.content{
+    position: relative;
+    /* border: 1px solid red; */
+    padding: 30px;
+    width: 70%;
+    min-width: 1000px;
+    margin-top: 0px;
+    /* margin:auto 0; */
+    /* background-color: #fff; */
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h3,h3 a{
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+.title a i{
+    color: #29dfb1;
+    font-size: 30px;
+}
+.title a i:hover{
+    color: #4ef7cd;
+}
+
+/*上方欄*/
+.info_wrap{
+    /* border: 1px solid red; */
+    background-color: #fff;
+    box-shadow:  1px 1px 1px #ddd;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+}
+
+/*個人照片*/
+.picture{
+    width: 220px;
+    height: 220px;
+    min-width: 220px;
+    display: flex;
+    margin: 20px 0px 20px 20px;
+    border-radius: 50%;
+    overflow:hidden;
+    background-color: #fff;
+}
+.picture img{
+    width: 100%;
+    object-fit:cover
+}
+
+.profile{
+    margin: 10px;
+    width: 700px;
+    /* border: 1px solid red; */
+}
+
+.wrap_right{
+    display: flex;
+    padding: 10px 10px 0px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrap_profile{
+    display: flex;
+    width: 350px;
+    padding: 0px 0px 10px 10px;
+    /* border: 1px solid red; */
+}
+.wrap_right .left{
+    width: 40%;
+}
+.wrap_right .right{
+    width: 60%;
+}
+.wrap_right .left{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wp_div:nth-child(1){
+    display: flex;
+    align-items:baseline;
+    /* border: 1px solid red; */
+}
+.wp_div:nth-child(1) h2{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.wp_div:nth-child(3) a{
+    font-weight: 400;
+    color: #21d4a7;
+}
+.wp_div:nth-child(3) a:hover{
+    color: lightsalmon;
+}
+.wrap_right .right{
+    justify-content:space-around;
+    align-items: center;
+    /* width: 60%; */
+}
+
+.body_data{
+    padding: 10px;
+    /* border: 1px solid red; */
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: 400;
+}
+.body_data:first-child .data p{
+    width: 50px;
+}
+.data p{
+    display: inline-block;
+    width: 65px;
+    vertical-align: baseline;
+    /* border: 1px solid red; */
+}
+.data p i{
+    font-size: 14px;
+    margin-left: 3px;
+}
+.data p a{
+    color: #333;
+}
+.data span{
+    color:#21d4a7;
+    font-weight: 600;
+    /* border: 1px solid red; */
+}
+/* 懸浮文字 */
+.tooltip-inner {
+    background: #333;
+    text-align:left;
+    padding: 10px 15px 15px 15px;
+    line-height: 1.5rem;
+    max-width: 400px !important;
+    white-space: pre-wrap;
+}
+
+/* 學員自介 */
+.self_intro{
+    font-size: 15px;
+    padding: 10px 40px 0px 20px;
+    white-space: pre-wrap;
+    /* border: 1px solid red; */
+}
+
+.self_intro p{
+    /* letter-spacing:0.8px; */
+    line-height: 1.5rem;
+}
+
+
+.p_info{
+    width: 500px;
+    margin: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+
+
+
+
+
+/* 編輯 */
+.explain{
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+.edit_area{
+    width: 630px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px 20px;
+    margin: 20px 0px;
+    font-size: 14px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    box-shadow:0px 0px 2px #ccc;
+}
+.edit_area label{
+    color: #666;
+}
+.edit_box{
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid red; */
+}
+.edit_box input,.edit_box textarea, .select_activity{
+    width: 570px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0px 0px 3px #ccc;
+}
+.e_button{
+    text-align: right;
+}
+
+.e_button button:hover{
+    background-color: #29dfb1;
+}
+.e_button button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Noto Sans TC', Tahoma, Helvetica, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+
+}
+.e_button .cancel{
+    margin-right: 20px;
+    background-color: #ccc;
+}
+.e_button .cancel:hover{
+    margin-right: 20px;
+    background-color: rgb(214, 210, 210);
+}
+.e_button .save{
+    background-color: #21d4a7;
+}
+
+
+
+/* 課程 */
+.t{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.t h5{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #666;
+}
+.table td a{
+    color: #32c8a3;
+}
+.thead-light tr th{
+    padding: 20px;
+    text-align: center;
+}
+tbody tr td{
+    font-size: 16px;
+    padding: 20px;
+}
+tbody tr td{
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.6;
+}
+tbody tr td i{
+    font-size: 26px;
+}
+
+.class_name{
+    width: 300px;
+}
+
+/* 體重趨勢說明 */
+#weight_info{
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+}
+#weight_info span a i{
+    font-size: 14px;
+    color: #666;
+}
+#weight_info p{
+    margin: 0px 7px ;
+}
