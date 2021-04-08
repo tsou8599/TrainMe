@@ -11,7 +11,7 @@
             /* background-color: #fff; */
             /* box-shadow:0px 0px 7px #ccc; */
             /* border: 1px solid  red; */
-            padding: 20px ;
+            padding: 20px 0;
             /* padding: 20px 200px; */
             z-index: 999;
         }
@@ -31,18 +31,35 @@
         .items li{
             font-size: 14px;
             margin: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: 'Noto Sans TC', sans-serif;
         }
         .items li a{
             color: #fff;
             transition: .3s;
         }
-        /* .items li a:hover{
-            color: #59ddb8;
-            box-shadow: 0 2px #21d4a7;
-            padding-bottom:8px;
-            text-decoration: none;
-        } */
+        ul .bar {
+            display: none;
+            padding: 0 40px;
+        }
+        ul .bar i{
+            /* background-color: #fff; */
+            color: #fff;
+            font-size: 22px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            /* border:1px solid #fff;  */
+            /* border-radius: 5px; */
+            text-align: center;
+            cursor: pointer;
+        }
+        ul .bar i.show::before{
+            content: '\f00d';
+            color: #fff;
+        }
         /* 通知鈴鐺 */
         ul li:last-child a .far{
             position: relative;

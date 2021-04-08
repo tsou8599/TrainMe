@@ -28,6 +28,8 @@ import _10_studentCourse.model.StudentCourseBean_H;
 import _11_orderProcess.model.OrdersBean_H;
 import _12_message.model.MessageBean;
 import _13_addfavorite.model.FavoriteBean;
+import _14_forum.model.ArticleBean;
+import _14_forum.model.ResponseBean;
 
 
 
@@ -111,7 +113,13 @@ public class StudentBean_H extends MemberBean_H {
 	
 	@OneToMany(mappedBy = "studentBean_H")
 	private Set<FavoriteBean> favoriteBean = new LinkedHashSet<>();
+	
+	@OneToMany(mappedBy = "studentBean_H")
+	private Set<ArticleBean> articleBean = new LinkedHashSet<>();
 
+	@OneToMany(mappedBy = "studentBean_H")
+	private Set<ResponseBean> responseBean = new LinkedHashSet<>();
+	
 	public StudentBean_H(String name, String phone, String email, Date birthday, String password, String id_number,
 			String sex, String hash) {
 		super();

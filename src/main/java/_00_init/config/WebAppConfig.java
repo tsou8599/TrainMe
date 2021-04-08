@@ -18,7 +18,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 @ComponentScan({ "_00_init","_01_register","_02_login","_03_memberData","_04_money"
 	,"_07_memberInfo","_08_searchTrainer","_09_trainerCourse","_10_studentCourse","mail"
-	,"_12_message","_13_addfavorite"})
+	,"_12_message","_13_addfavorite","_14_forum"})
 public class WebAppConfig implements WebMvcConfigurer {
 	
 	@Bean

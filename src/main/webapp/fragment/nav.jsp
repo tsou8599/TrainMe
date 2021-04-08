@@ -12,16 +12,17 @@
                 <a href="<c:url value='/' />"><img src="${pageContext.request.contextPath}/images/index/logo_black.png" id="logoimg"></a>
 <!--                 <a href="#"><img src="../images/index/logo_black.png"></a> -->
             </li>
+            <li class="bar"><i class="fas fa-bars"></i></li>
                 <div class="items">
                     <li><a class="nav-underline" href="#about">關於我們</a></li>
                     <li><a class="nav-underline" href="<c:url value='/searchTrainerAll' />">尋找教練</a></li>
                     <li><a class="nav-underline" href="#contact">聯絡我們</a></li>
 <!--                     <li><a href="#">購物商城</a></li> -->
-<!--                     <li><a href="#">運動論壇</a></li> -->
+                    <li><a class="nav-underline" href="<c:url value='/forumAll' />">運動論壇</a></li>
+		            <li>
+		                <button class="nav_btn" onclick="Show();">登入/註冊</button>
+		            </li>    
                 </div>
-            <li>
-                <button class="nav_btn" onclick="Show();">登入/註冊</button>
-            </li>    
        
        
     </header>

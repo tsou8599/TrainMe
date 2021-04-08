@@ -51,7 +51,7 @@
     border-radius: 3px;
     font-size: 16px;
     font-family: "Noto Sans TC", sans-serif;
-    text-align: center;
+/*     text-align: center; */
     vertical-align: baseline;
   }
   .search_trainer .search_input {

@@ -123,6 +123,7 @@
 }
 
 .intro .box i {
+	display:block;
 	font-size: 18px;
 	margin-right: 8px;
 }

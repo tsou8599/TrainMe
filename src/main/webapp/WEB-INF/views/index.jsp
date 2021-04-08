@@ -50,6 +50,114 @@
 
 <style>
 /* 	       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');  */
+	body{
+		overflow-x:hidden;
+	}
+
+  @media screen and (max-width: 1024px){
+        header{
+            width: 100%;            
+        }
+        .carousel-item img{
+            width: 100%;
+            height: 100%;
+        }
+        .new {
+           height: 100%;
+           flex-direction: column;
+           width: 100%;
+        }
+
+        .search_trainer{
+            width: 100%;
+            position: relative;
+            display: block;
+            text-align: center;
+            /* justify-content: center; */
+            /* flex-direction: column; */
+            background-color: #eee;
+            padding:50px 0 20px 0;
+        }
+        .search_trainer li select,.search_trainer li .search_input,.search_trainer li button{
+            width: 80%;
+            margin: 10px 0px; 
+        }
+        .search_input{
+         	width: 80%;
+        	text-align: left;
+        }
+        .showbg{
+            background-color: #bbb;
+        }
+        header .items{
+            display: block;
+            position: absolute;
+            background-color: #bbb;
+            /* height: calc(50vh - 75px); */
+            width: 100%;
+            /* top: 80px; */
+            top:-300px;
+            transition: top .4s;
+        }
+        header .items.show{
+            top:80px;
+        }
+        header .items li {
+            padding: 20px 0px;
+            font-size: 16px;
+        }
+        ul .bar {
+            display: block;
+        }
+        
+        .logo{
+            display: flex;
+        }
+
+        /* 文字 */
+
+        .carousel .ad {
+            position: absolute;
+            left: 20%;
+            top: 20%;
+        }
+        .fa-angle-right:before{
+        	display: none;
+        }
+
+    }
+
+    @media screen and (max-width: 768px){
+    	
+        .carousel .ad h3{
+            padding: 0;
+            align-items: center;
+/*             width: 300px; */
+            font-size: 1.4rem;
+        }
+        .carousel .ad p{
+            display: none;
+        }
+        .fa-angle-right:before{
+        	display: none;
+        }
+    }
+    
+     @media screen and (max-width: 411px){
+     	.carousel .ad {
+            position: absolute;
+ 			top:20%;
+ 			left:15%;
+        }
+	     .logo{
+	     	margin-left:-100px; 
+	     }
+     	ul .bar {
+      		margin-left:-100px; 
+     		
+     	}
+     }
+
 </style>
 </head>
 <body>
@@ -510,6 +618,14 @@
 				$('#gotop').fadeOut();
 			}
 		});
+		
+// 		漢堡
+		 $('ul .bar i').click(function(){
+	            $('header').toggleClass('showbg');
+	            $('header .items').toggleClass('show');
+	            $('ul .bar i').toggleClass('show');
+	            
+	        });
 
 // 教練推薦
 

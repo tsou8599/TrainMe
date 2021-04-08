@@ -16,7 +16,7 @@
 <!-- 			<li><a href="#about">關於我們</a></li> -->
 			<li><a class="nav-underline" href="<c:url value='/searchTrainerAll?stId=${LoginOK.id}' />">尋找教練</a></li>
 <!-- 			<li><a href="#">購物商城</a></li> -->
-<!-- 			<li><a href="#">運動論壇</a></li> -->
+			<li><a href="#">運動論壇</a></li>
 		</div>
 		<!--             <li> -->
 		<!--                 <button class="nav_btn" id="logout	_btn" >登出</button> -->

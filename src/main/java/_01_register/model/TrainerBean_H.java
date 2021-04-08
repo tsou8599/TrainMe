@@ -28,6 +28,8 @@ import _09_trainerCourse.model.TrainerOffBean_H;
 import _11_orderProcess.model.OrdersBean_H;
 import _12_message.model.MessageBean;
 import _13_addfavorite.model.FavoriteBean;
+import _14_forum.model.ArticleBean;
+import _14_forum.model.ResponseBean;
 
 
 
@@ -121,6 +123,13 @@ public class TrainerBean_H extends MemberBean_H {
 	
 	@OneToMany(mappedBy = "trainerBean_H")
 	private Set<FavoriteBean> favoriteBean = new LinkedHashSet<>();
+	
+	@OneToMany(mappedBy = "trainerBean_H")
+	private Set<ArticleBean> articleBean = new LinkedHashSet<>();
+	
+	@OneToMany(mappedBy = "trainerBean_H")
+	private Set<ResponseBean> responseBean = new LinkedHashSet<>();
+	
 	
 	public TrainerBean_H(Integer id, Integer type, String name, String phone, Date birthday, String email, String password,
 			String id_number, String sex, Integer verification, GymBean_H gym, Integer is_delete, String myHash,Double ratings,Integer ratings_size) {
@@ -750,6 +759,20 @@ public class TrainerBean_H extends MemberBean_H {
 
 	public void setTrainerTotal(Long trainerTotal) {
 		this.trainerTotal = trainerTotal;
+	}
+
+
+
+
+	public Set<ArticleBean> getArticleBean() {
+		return articleBean;
+	}
+
+
+
+
+	public void setArticleBean(Set<ArticleBean> articleBean) {
+		this.articleBean = articleBean;
 	}
 
 
